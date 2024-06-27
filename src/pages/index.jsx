@@ -49,6 +49,18 @@ export default function Home(){
                 </div>
             </div>
         </StyledGeral>
+        <StyledSites>
+            <h3>Sites</h3>
+
+            <div className="site">
+                <Image
+                src="/image/lamborghini-desktop.png"
+                width={550}
+                height={350}
+                />
+                <p>Esse foi um projeto onde eu recriei o site da lamborghini usando algumas coisas que aprendi na minha jornada com next, e foi algo que eu fiquei apaixonado.</p>
+            </div>
+        </StyledSites>
         </>
       );
     }
@@ -108,5 +120,28 @@ const StyledGeral = styled.section`
 
     p {
         font-size: 20px;
+    };
+`;
+const StyledSites = styled.section`
+    padding: 30px;
+    font-family: var(--fonte-texto);
+    display: flex;
+    gap: 50px;
+
+    .site {
+        background-color: lightgray;
+        width: 35%;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 40px
     };
 `;
